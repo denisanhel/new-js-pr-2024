@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Керування списком</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+    <h2>Керування списком</h2>
+
+    <label for="pair-input">Name=Value</label> <br>
+    <input type="text" id="pair-input" placeholder="Name=Value">
+
+    <button onclick="addPair()">Додати</button>
+    <hr>
+
+    <label for="pair-list">Список</label>
+    <select id="pair-list" multiple></select>
+    <br>
+    <button onclick="sortList('name')">Відсортувати за name</button>
+    <button onclick="sortList('value')">Відсортувати за value</button>
+    <button onclick="deletePairs()">Видалити вибране</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
